@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Verdana, Helvetica, Arial, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: 20% 80%;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: black;
+    /* height: 100%; */
+}
+
+aside {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-rows: repeat(20% 70% 10%); 
+    background-color: grey;
+    grid-column: 1;
+    grid-row: span 6;
+}
+
+aside img {
+    /* grid-row: 1; */
+    /* align-self: center; */
+    /* text-align: center; */
+    justify-items: center;
+    border-radius: 50%;
+    background-color: pink;
+    /* padding: 10px; */    
+}
+
+aside > nav {
+    background-color: aqua;
+
+}
+
+main {
+    background-color: black;
+    /* overflow-y: scroll; */
+    grid-column: 2;
+    grid-row: 2 / 6;
+}
+
+/* main > header {
+    background-color: red;
+    grid-row: 1;
+}
+
+main > section {
+    background-color: green;
+    grid-row: 2 / 6;
+} */
