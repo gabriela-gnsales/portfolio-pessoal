@@ -5,35 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela Sales | Portfólio</title>
-    <link rel="stylesheet" href="estilo/portfolio.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css" type="text/css">
 </head>
 <body>
-    <aside>
-        <img width=100px src="img/foto-perfil.png" alt="Foto perfil Gabriela">
-        <nav>
-            <ul>
-                <li><a class="link-indice" href="#perfil-profissional">Perfil profissional</a> 
-                <li><a class="link-indice" href="#formacao">Formação</a> 
-                <li><a class="link-indice" href="#experiencia">Experiência</a>
-                <li><a class="link-indice" href="#contato">Contato</a>
-            </ul>
-        </nav>
-        <div>
-            
-        </div>
-    </aside>     
+
+    <header>
+        <h2 id="bem-vindo">Bem-vindo(a) ao meu portfólio!</h2>
+        <h2 id="ola">Olá, sou a</h2>
+        <h1 id="nome">Gabriela Gomes Nogueira Sales_</h1>
+        <h2 id="formacao1">&lt; Engenheira Ambiental /&gt;</h2>
+        <h2 id="formacao2">&lt; Estudante de Desenvolvimento Web Full Stack /&gt;</h2>
+    </header>
+
+    <nav>        
+        <a class="link-indice" href="#sobre-mim">Sobre mim</a> 
+        <a class="link-indice" href="#formacao">Formação</a> 
+        <a class="link-indice" href="#experiencia">Experiência</a>
+        <a class="link-indice" href="#contato">Contato</a>
+    </nav>
 
     <main>
-        <!-- <header>
-            <h1>Main - header</h1>
-        </header>
-        <section>
-            <h1>Main - sextion</h1>
 
-        </section> -->
+        <article class="sobre-mim">
+            <h1 id="sobre-mim">SOBRE MIM</h1>
+            <p>Meu nome é <strong>Gabriela</strong>, tenho 27 anos e moro em Curitiba/PR.</p>
+            <p>Sou formada em Engenharia Ambiental, na/pela Universidade Federal do Paraná (UFPR), instituição na qual também realizei meu mestrado, no Programa de Pós-Graduação em Engenharia Ambiental (PPGEA). Realizo consultorias para projetos de modelagem ambiental e de desenvolvimento web.</p>
+            <p>O tema do meu trabalho de conclusão de curso, bem como da minha dissertação, foi na área de modelagem matemática/computacional da qualidade da água de reservatório de abastecimento público. Realizei simulações com modelos 1D e 2D. A formação acadêmica me agregou conhecimentos para a realização de trabalhos com alto grau de qualidade.</p>
+            <p>Quanto à experiência profissional, trabalhei como Engenheira Ambiental Residente Técnica no Instituto Água e Terra (órgão gestor ambiental do Paraná), atuando no setor de gerenciamento de recursos hídricos, especificamente no apoio técnico e administrativo aos Comitês de Bacias Hidrográficas paranaenses. Anteriormente, realizei estágio na Companhia de Saneamento do Paraná (Sanepar) e no Instituto Ambiental do Paraná.</p>
+            <p>Atualmente, realizo uma formação em Desenvolvimento Web Full Stack, na escola de programação Let’s Code. O que me motivou a fazer o curso foi meu interesse pela área de tecnologia, a qual irá permear cada vez mais todos os nichos profissionais. O trabalho com modelagem ambiental, sobretudo, requer um conhecimento aprofundado de programação computacional.</p>
+        </article>
 
+        <article class="formacao">
+            <h1 id="formacao">FORMAÇÃO</h1>
+
+            <div class="cursos">
+                
+                <div class="caixa">
+                    <h2 class="ano"><strong>2022</strong></h2>
+                    <h3>Let's Code Academy</h3>
+                    <h3>Curso de Desenvolvimento Web Full Stack</h3>
+                    <h3>400 horas (cursando)</h3>
+                </div>
+
+                <h2 class="ano"><strong>2018 - 2020</strong></h2>
+                <h3>UFPR/PPGEA | Curitiba/PR</h3>
+                <h3>Mestrado em Engenharia Ambiental</h3>
+                <h3>Dissertação: <em>Water quality modeling in a subtropical water supply reservoir</em></h3>
+                <a class="link-azul" href="docs/GabrielaSales_dissertation.pdf" download="GabrielaSales_dissertation.pdf" type="application/pdf" target="_blank">Baixe aqui minha dissertação</a>
+
+                <h2 class="ano"><strong>2013 - 2017</strong></h2>
+                <h3>UFPR | Curitiba/PR</h3>
+                <h3>Graduação em Engenharia Ambiental</h3>
+                <h3>TCC: <em>Modelagem da qualidade da água do reservatório do Passaúna na Região Metropolitana de Curitiba – PR</em></h3>                           
+                <a class="link-azul" href="docs/GabrielaSales_TCC.pdf" download="GabrielaSales_TCC.pdf" type="application/pdf" target="_blank">Baixe aqui meu Trabalho de Conclusão de Curso</a></p>
+            </div>
+
+            <div class="tecnologias-modelos">
+                <h2>Tecnologias</h2>
+                <img src="img/logo-tecnologias.png" alt="Logo HTML5, CSS3 e JavaScript">
+                <h2>Modelos matemáticos</h2>
+                <a href="https://aed.see.uwa.edu.au/research/models/glm/" rel="external" target="_blank"><img src="img/GLM.jpg" alt="Logo GLM"></a>
+                <br>
+                <a href="http://www.sisbahia.coppe.ufrj.br/" rel="external" target="_blank"><img src="img/SISBAHIA.png" alt="Logo SISBAHIA"></a>
+            </div>
+
+            <!-- <div class="modelos">
+                <H2>Modelos matemáticos</H2>
+
+            </div>             -->
+
+            
+            <!-- <a href="https://acervodigital.ufpr.br/bitstream/handle/1884/69368/R%20-%20D%20-%20GABRIELA%20GOMES%20NOGUEIRA%20SALES.pdf?sequence=1&isAllowed=y" rel="external" target="_black">Acesse minha dissertação aqui.</a> -->
+                
+            <!-- <p><strong>SGS Academy | Curitiba/PR | 2017</strong><br>
+            Curso de Auditor Interno Integrado (32 horas)<br>
+            ISO 9001:2015, ISO 14001:2015 e OHSAS 18001:2007<br>
+            UFPR | Curitiba/PR | 2013 - 2017<br>
+            <a class="link-azul" href="docs/2017_Curso auditor interno.pdf" download="2017_Curso auditor interno.pdf" type="application/pdf" target="_blanck">Baixe aqui meu certificado</a></p> -->
+                
+                        
+            <!-- <p><strong>Colégio Estadual Homero Baptista de Barros | Curitiba/PR | 2009 - 2012</strong><br>
+            Técnico em Meio Ambiente integrado ao Ensino Médio</p> -->
+        </article>
+    
+            <h3 id="experiencia">EXPERIÊNCIA PROFISSIONAL</h3>
+            <!-- <hr> -->
+
+            <p><strong>Instituto Água e Terra | Gerência de Gestão de Bacias Hidrográficas | 2019 - 2021</strong> <br>
+            Engenheira Ambiental Residente Técnica<br>
+            Apoio técnico e administrativo aos Comitês de Bacias Hidrográficas paranaenses</p>   
+
+            <p><strong>Sanepar | Unidade de Produção de Curitiba – USPD | 2017</strong> <br>
+            Estagiária - Engenharia Ambiental<br>
+            Auxílio em ações ambientais nas ETAs e barragens de abastecimento público, na contratação de serviços afins à área ambiental e apoio nas atividades relativas ao Sistema de Gestão Ambiental da Unidade</p>
+
+            <p><strong>IAP - Escritório Regional de Curitiba | Fiscalização | 2011 - 2012</strong><br>
+            Estagiária - Técnico em Meio Ambiente<br>
+            Atuação na administração dos processos do departamento, atendimento ao público, registro de denúncias, digitação de Ofícios e Termos de Compromisso</p>
+            <hr>
+
+            <h3 id="contato">CONTATO</h3>
+        
+            <aside>
+                <h3>Quer aprender mais?</h3>
+                
+                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+                
+                <ul>
+                    <li>1.5 - <abbr title="Bolo de Copo">Cupcake</abbr>
+                    <li>1.6 - <abbr title="Rosquinha">Donut</abbr>
+                    <li>3.0 - <abbr title="Bomba">Eclair</abbr>
+                    <li>2.2 - <abbr title="Iogurte Congelado">Froyo</abbr>
+                    <li>2.3 - <abbr title="Biscoito de Gengibre">Gingerbread</abbr>
+                    <li>3.0 - <abbr title="Favo de Mel">Honeycomb</abbr>
+                    <li>4.0 - <abbr title="Sanduíche de Sorvete">Ice Cream Sandwich</abbr>
+                    <li>4.1 - <abbr title="Jujuba">Jelly Bean</abbr>
+                    <li>4.4 - <abbr title="KiKat">KitKat</abbr>
+                    <li>5.0 - <abbr title="Pirulito">Lolipop</abbr>
+                    <li>6.0 - <abbr title="Marshmallow">Marshmallow</abbr>
+                    <li>7.0 - <abbr title="Torrone">Nougat</abbr>
+                    <li>8.0 - <abbr title="Oreo">Oreo</abbr>
+                    <li>9.0 - <abbr title="Torta">Pie</abbr>
+                </ul>
+                
+                <p>Infelizmente, o <strong>Android Q</strong> não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                
+                <p>Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/#/donut" target="_blank" rel="external" class="externo">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+            </aside>
+          
+            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
+        </article>
     </main>
+    <footer>
+        <p>Desevolvido por Gabriela Gomes Nogueira Sales</p>
+        <p>Copyright - 2022</p>
+    </footer>
     
 </body>
 </html>
