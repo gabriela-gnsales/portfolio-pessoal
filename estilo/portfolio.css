@@ -33,18 +33,21 @@
     padding: 0px;
 }
 
-html, body {
+html {
     height: 100%;
+    
 }
 
 body {
-    margin: 0;
+    margin: 0; 
+    height: 100%;
+    /* overflow-y: hidden;    */
 }
 
 .grid {
     display: grid;
     height: 100%;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 85%; 
 }
 
 /* @media (max-width: 800px) {
@@ -60,6 +63,7 @@ aside {
     background-color: black;
     padding: 40px 10px;
     height: 100vh;
+    /* height: 100%; */
 }
 
 aside img#perfil {
