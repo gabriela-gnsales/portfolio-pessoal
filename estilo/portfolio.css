@@ -137,7 +137,7 @@ main {
 
 main section.inicio {
     background-color: white;
-    background-image: url(/img/plano-fundo-abertura.jpg);
+    background-image: url(../img/plano-fundo-abertura.jpg);
     opacity: 0.9;
     background-size: cover;
     background-position: center center;
@@ -201,7 +201,7 @@ main section h1:hover {
 
 main section.sobre-mim {
     background-color: white;
-    background-image: url(/img/foto-sobre-mim-opaca.png); 
+    background-image: url(../img/foto-sobre-mim-opaca.png); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
