@@ -172,7 +172,31 @@ section.inicio h1 {
 #nome {
     text-align: left;
     font-size: 3.5em;
-    padding: 25px 70px 0px 70px;
+
+    font-family: var(--font-inicio);
+    color: var(--cor1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+    /* padding-top: 40px; */
+    padding-left: 70px;    
+    /* padding: 25px 70px 0px 70px; */
+    /*  */
+}
+
+#nome:hover {
+    color: var(--cor2);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
+
+#underline {
+    font-family: var(--font-inicio);
+    color: var(--cor1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+    font-size: 3.5em;
+    animation: piscaPisca 0.7s infinite;
+}
+
+@keyframes piscaPisca {
+    100% {color: var(--cor2);}
 }
 
 #formacao1 {
