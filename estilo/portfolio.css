@@ -331,7 +331,7 @@ main section.experiencia {
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 85%;
     /* grid-template-rows: 20% 80%; */
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2));       
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2));       
     /* min-height: 600px; */
     height: 100vh;
 }
@@ -399,6 +399,7 @@ main section.contato {
 main section.contato h1 {
     grid-column: 1 / 4;
     grid-row: 1;
+    padding-top: 30px;
 }
 
 .primeira-parte-contato {
@@ -419,13 +420,14 @@ main section.contato h1 {
 }
 
 .links-contato td.imagem {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
+
     text-align: center;
 }
 
 .links-contato table img{
-    height: 30px;  
+    /* height: 30px;   */
     width: auto;  
 }
 
@@ -438,13 +440,15 @@ main section.contato h1 {
     text-align: left; 
     width: 150px;
     height: 40px;
+    padding-left: 10px;
 }
 
 .links-contato p {
     font-family: var(--fonte-padrao);
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: normal;
     color: var(--cor4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.096);
     text-align: center;
     padding-top: 20px;
     /* padding-bottom: 10px; */
