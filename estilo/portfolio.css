@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=PT+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=PT+Sans&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=PT+Sans&family=Quicksand&display=swap'); */
 
@@ -13,12 +11,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
-
-/* @font-face {
-    font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-} */
 
 :root {
     --cor1: #c5ebd6;
@@ -32,10 +24,8 @@
 
     --font-inicio:'Averia Libre', cursive;
     --fonte-destaque: 'Expletus Sans', cursive;
-    --fonte-padrao: 'PT Sans', sans-serif;
-    --fonte-padrao2: 'Quicksand', sans-serif;
-    /* --fonte-destaque: 'Bebas Neue', cursive; */    
-    /* --font-android: 'Android', cursive; */
+    --fonte-padrao: 'Quicksand', sans-serif;
+    /* --fonte-padrao2: 'PT Sans', sans-serif; */
 }
 
 * {
@@ -48,9 +38,13 @@ html, body {
 }
 
 body {
+    margin: 0;
+}
+
+.grid {
     display: grid;
-    grid-template-columns: 15% 85%;
     height: 100%;
+    grid-template-columns: 15% 85%;
 }
 
 /* @media (max-width: 800px) {
@@ -63,7 +57,6 @@ body {
 } */
 
 aside {
-    /* background-color: rgb(102, 101, 101); */
     background-color: black;
     padding: 40px 10px;
     height: 100vh;
@@ -109,7 +102,7 @@ aside h1:hover {
 aside nav a {
     display: block;
     text-align: center;
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 1.2em;
     font-weight: bold;
     color: var(--cor2);
@@ -217,7 +210,7 @@ main section.sobre-mim {
 }
 
 main section.sobre-mim  p {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     /* color: rgb(0, 0, 0); */
     color: var(--cor5);
     text-align: justify;
@@ -234,7 +227,7 @@ main section.formacao {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 15% 85%;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));    
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2));    
     /* min-height: 600px; */
     height: 100vh;
 }
@@ -264,7 +257,7 @@ main h2:hover {
 }
 
 main h3 {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 1.1em;
     font-weight: normal;
     color: var(--cor5);
@@ -272,7 +265,7 @@ main h3 {
 }
 
 .cursos a {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 0.9em;
     font-weight: normal;
     text-decoration: none;
@@ -310,7 +303,7 @@ main section.experiencia {
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 85%;
     /* grid-template-rows: 20% 80%; */
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));       
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));       
     /* min-height: 600px; */
     height: 100vh;
 }
@@ -327,7 +320,7 @@ main section.experiencia h1 {
 }
 
 main h4 {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 0.9em;
     font-weight: normal;
     text-align: justify;
@@ -370,7 +363,7 @@ main section.contato {
     grid-template-rows: 10% 90%;
     /* grid-template-rows: 15% 85%; */
     /* grid-template-rows: 20% 80%; */
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));   
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2));   
     /* min-height: 600px; */
     height: 100vh;
 }
@@ -378,6 +371,12 @@ main section.contato {
 main section.contato h1 {
     grid-column: 1 / 4;
     grid-row: 1;
+}
+
+.primeira-parte-contato {
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 .links-contato {
@@ -388,7 +387,7 @@ main section.contato h1 {
 .links-contato table {
     /* padding: 20px 20px 5px 20px; */
     margin: auto;
-    padding-top: 35px;
+    /* padding-top: 60px; */
 }
 
 .links-contato td.imagem {
@@ -403,7 +402,7 @@ main section.contato h1 {
 }
 
 .links-contato table td.texto {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: normal;
     color: var(--cor5);
@@ -414,7 +413,7 @@ main section.contato h1 {
 }
 
 .links-contato p {
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: normal;
     color: var(--cor4);
@@ -436,9 +435,10 @@ main section.contato h1 {
 }
 
 .formulario-contato {
-    grid-column: 2;
-    grid-row: 2;
-    margin: auto;
+    /* grid-column: 2;
+    grid-row: 2; */
+    display: flex;
+    align-items: center;
 }
 
 iframe {
@@ -447,9 +447,11 @@ iframe {
 }
 
 .foto-contato img {
-    width: 80%;
+    display: flex;
+    align-items: center;
+    width: 85%;
     border-radius: 50%;
-    padding: 30px 10px;
+    /* padding: 0px 10px; */
     margin: auto;
     /* padding: 10px; */
 }
@@ -458,7 +460,7 @@ iframe {
 main section.rodape {
     display: flex;
     justify-content: space-between;
-    font-family: var(--fonte-padrao2);
+    font-family: var(--fonte-padrao);
     font-size: 0.8em;
     color: white;
     background-color: var(--cor3);
@@ -523,35 +525,6 @@ input.enviar {
     font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: bold;
-} */
-
-
-
-/* .foto-contato {
-    grid-column: 3;
-    grid-row: 2;
-    background-image: url(../img/foto-contato.jfif);    
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 5%;
-} */
-
-/* main img {
-    width: 100%;
-}
-
-main img.pequena {
-    display: block;
-    margin: auto;
-    max-width: 350px;
-} */
-
-
-/* aside > ul {
-    list-style-position: inside;
-    list-style-type: '\2714\00A0\00A0';
-    columns: 2;
 } */
 
 
