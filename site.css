@@ -21,7 +21,7 @@
 } */
 
 :root {
-    --cor0: #c5ebd6;
+    --cor1: #c5ebd6;
     /* --cor1: #83e1ad; */
     /* --cor2: #3ddc84; */
     --cor2: #2fa866;
@@ -101,7 +101,7 @@ aside h1 {
 }
 
 aside h1:hover {
-    color: var(--cor4);
+    color: var(--cor2);
     font-size: 1.7em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
@@ -112,8 +112,7 @@ aside nav a {
     font-family: var(--fonte-padrao2);
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--cor1);
-    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336); */
+    color: var(--cor2);
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
@@ -122,7 +121,7 @@ aside nav a {
 
 aside nav a:hover {
     background-color: var(--cor3);
-    color: var(--cor5);
+    color: var(--cor1);
 }
 
 .redes-sociais-indice {
@@ -144,6 +143,7 @@ main {
 }
 
 main section.inicio {
+    background-color: white;
     background-image: url(../img/plano-fundo-abertura.jpg);
     opacity: 0.9;
     background-size: cover;
@@ -155,7 +155,7 @@ main section.inicio {
 
 section.inicio h1 {
     font-family: var(--font-inicio);
-    color: var(--cor0);
+    color: var(--cor1);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
     padding: 0px;
 }
@@ -193,7 +193,7 @@ section.inicio h1 {
 main section h1 {
     font-family: var(--fonte-destaque);
     font-size: 2em;
-    color: var(--cor5);
+    color: var(--cor3);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
     text-align: center;
     padding-top: 50px;
@@ -202,11 +202,12 @@ main section h1 {
 
 main section h1:hover {
     font-size: 2.5em;
-    color: var(--cor3);
+    color: var(--cor2);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
 
 main section.sobre-mim {
+    background-color: white;
     background-image: url(/img/foto-sobre-mim-opaca.png);
     background-size: cover;
     background-position: center center;
@@ -215,18 +216,10 @@ main section.sobre-mim {
     height: 100vh;
 }
 
-/* main h2 {
-    font-family: var(--font-android);
-    font-weight: normal;
-    color: var(--cor4);
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    text-indent: 8px;
-} */
-
 main section.sobre-mim  p {
     font-family: var(--fonte-padrao2);
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
+    color: var(--cor5);
     text-align: justify;
     /* text-indent: 30px; */
     font-size: 1em;
@@ -239,52 +232,69 @@ main section.sobre-mim  p {
 
 main section.formacao {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 15% 85%;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));    
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));    
     /* min-height: 600px; */
     height: 100vh;
 }
 
 main section.formacao h1 {
-    /* background-color: red; */
     grid-column: 1 / 3;
     grid-row: 1;
 }
 
 .cursos {
-    /* background-color: yellow; */
     grid-column: 1;
     grid-row: 2;
 }
 
-h2 { 
-    /* .cursos h2  */
-    font-family: var(--fonte-padrao);
+.cursos h2 { 
+    font-family: var(--fonte-destaque);
     font-size: 1.5em;
-    color: red;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
-    padding: 20px 20px 5px 50px; 
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.096);
+    padding: 20px 10px 10px 50px; 
 }
 
-h3 {
-    /* .cursos h3  */
-    font-family: var(--fonte-padrao);
+main h2:hover {
+    color: var(--cor5);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.123);
+    font-size: 1.8em;
+}
+
+main h3 {
+    font-family: var(--fonte-padrao2);
     font-size: 1.1em;
     font-weight: normal;
-    color: gray;
-    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336); */
-    padding: 0px 20px 5px 50px;
+    color: var(--cor5);
+    padding: 0px 10px 5px 50px;
+}
+
+.cursos a {
+    font-family: var(--fonte-padrao2);
+    font-size: 0.9em;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--cor5);
+    padding-left: 50px;
+    /* padding: 0px 10px 0px 50px; */
+}
+
+.cursos a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.829);
 }
 
 .tecnologias-modelos h2 {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-size: 1.5em;
-    color: red;
-    text-align: center;
+    color: var(--cor4);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
-    padding-top: 50px;
+    text-align: center;    
+    padding-top: 40px;
     padding-bottom: 20px;
+    /* padding-right: 80px; */
 }
 
 .tecnologias-modelos img {
@@ -295,102 +305,82 @@ h3 {
     /* padding: 30px 0px; */    
 }
 
-/* .tecnologias {
-    grid-column: 2;
-    grid-row: 2;
-    background-color: orange;
-
-} */
-
-/* main strong {
-    color: var(--cor4);
-    background-color: var(--cor1);
-    padding: 2px 6px;
-} */
-
-main a {
-    font-family: var(--fonte-padrao);
-    font-size: 0.9em;
-    font-weight: normal;
-    text-decoration: none;
-    color: rgb(102, 101, 101);
-    /* background-color: var(--cor1); */
-    padding: 0px 20px 5px 50px;
-}
-
-main a:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
 main section.experiencia {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));    
+    grid-template-rows: 15% 85%;
+    /* grid-template-rows: 20% 80%; */
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));       
     /* min-height: 600px; */
     height: 100vh;
 }
 
 main section.experiencia h1 {
-    /* background-color: red; */
     grid-column: 1 / 3;
     grid-row: 1;
 }
 
-.lado-esquerdo {
-    /* background-color: yellow; */
-    grid-column: 1;
-    grid-row: 2;
+.experiencia h2:hover {
+    color: var(--cor5);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.123);
+    font-size: 1.8em;
 }
 
-.lado-esquerdo h2 {
-    padding-top: 20px;
+main h4 {
+    font-family: var(--fonte-padrao2);
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: justify;
+    color: var(--cor5);
+    padding: 0px 50px 5px 50px;
+}
+
+.lado-esquerdo {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 20px 0px;
+}
+
+main section.experiencia h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.096);
+    padding: 20px 10px 10px 50px; 
 }
 
 .lado-direito {
-    /* background-color: orange; */
     grid-column: 2;
     grid-row: 2;
-}
-
-h4 {
-    /* .cursos h3  */
-    font-family: var(--fonte-padrao);
-    font-size: 0.9em;
-    font-weight: normal;
-    color: gray;
-    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336); */
-    padding: 0px 20px 5px 50px;
+    padding: 55px 0px;
 }
 
 .lado-esquerdo img {
     display: block;
     margin: auto;
     width: 90%;
-    /* border: solid; */
     border-radius: 50%;
-    /* padding: 30px 0px;  */
-    /* padding-top: 50px; */
+    padding-left: 40px;
 }
 
 main section.contato {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 20% 80%;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));    
+    /* grid-template-columns: 25% 50% 25%; */
+    grid-template-columns: 30% 45% 25%;
+    grid-template-rows: 10% 90%;
+    /* grid-template-rows: 15% 85%; */
+    /* grid-template-rows: 20% 80%; */
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));   
     /* min-height: 600px; */
     height: 100vh;
 }
 
 main section.contato h1 {
-    /* background-color: red; */
     grid-column: 1 / 4;
     grid-row: 1;
 }
 
 .links-contato {
-    /* background-color: yellow; */
     grid-column: 1;
     grid-row: 2;
 }
@@ -398,7 +388,7 @@ main section.contato h1 {
 .links-contato table {
     /* padding: 20px 20px 5px 20px; */
     margin: auto;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .links-contato td.imagem {
@@ -408,32 +398,33 @@ main section.contato h1 {
 }
 
 .links-contato table img{
-    width: 30px;
-    height: 30px;    
+    height: 30px;  
+    width: auto;  
 }
 
-.links-contato td.texto {
+.links-contato table td.texto {
+    font-family: var(--fonte-padrao2);
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--cor5);
+    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.096); */
+    text-align: left; 
     width: 150px;
     height: 40px;
-    text-align: left;
-    font-family: var(--fonte-padrao);
-    font-size: 0.9em;
-    font-weight: normal;
-    color: gray;
 }
 
 .links-contato p {
-    font-family: var(--fonte-padrao);
-    font-size: 0.9em;
+    font-family: var(--fonte-padrao2);
+    font-size: 1em;
     font-weight: normal;
-    color: gray;
+    color: var(--cor4);
     text-align: center;
     padding-top: 20px;
     /* padding-bottom: 10px; */
 }
 
 .links-contato img {
-    width: 15%; 
+    width: 10%; 
 }
 
 .links-contato a {
@@ -441,32 +432,37 @@ main section.contato h1 {
     justify-content: center; */
     /* padding: 5px; */
     padding: 5px;   
-    margin: auto; 
-    
+    margin: auto;    
 }
 
 .formulario-contato {
-    /* background-color: orange; */
     grid-column: 2;
     grid-row: 2;
     margin: auto;
-    padding-bottom: 20px;
+}
+
+iframe {
+    margin: auto;
+    padding: 40px 5px;
 }
 
 .foto-contato img {
-    width: 90%;
+    width: 80%;
     border-radius: 50%;
+    padding: 30px 10px;
+    margin: auto;
     /* padding: 10px; */
 }
 
-footer {
+/* footer  */
+main section.rodape {
     display: flex;
     justify-content: space-between;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-padrao2);
     font-size: 0.8em;
     color: white;
-    background-color: var(--cor5);
-    padding: 10px;    
+    background-color: var(--cor3);
+    padding: 10px 20px;    
 }
 
 /* .formulario {
