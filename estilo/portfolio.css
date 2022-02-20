@@ -27,7 +27,6 @@
     --font-inicio:'Averia Libre', cursive;
     --fonte-destaque: 'Expletus Sans', cursive;
     --fonte-padrao: 'Quicksand', sans-serif;
-    /* --fonte-padrao2: 'PT Sans', sans-serif; */
 }
 
 * {
@@ -37,7 +36,6 @@
 
 html {
     height: 100%;
-    
 }
 
 body {
@@ -51,15 +49,6 @@ body {
     height: 100%;
     grid-template-columns: 15% 85%; 
 }
-
-/* @media (max-width: 800px) {
-    body {
-        grid-template-columns: 15% 85%;
-    }
-    aside h1 {
-        font-size: 0.7em;
-    }
-} */
 
 aside {
     background-color: black;
@@ -478,7 +467,7 @@ main section.contato h1 {
 }
 
 .links-contato img {
-    width: 10%; 
+    /* width: 10%;  */
 }
 
 .links-contato a {
