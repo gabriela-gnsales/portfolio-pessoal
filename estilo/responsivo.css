@@ -73,7 +73,8 @@
 
     main {
         /* max-width: ; */
-        overflow-x: hidden;        
+        overflow-x: hidden;   
+        /* height: 100%;      */
     }
 
     #bem-vindo {
@@ -121,8 +122,8 @@
         font-size: 1.5em;
     }
     main section.sobre-mim  p {
-        font-size: 0.67em;
-        line-height: 1em;
+        font-size: 0.7em;
+        line-height: 1.2em;
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
