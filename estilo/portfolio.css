@@ -58,8 +58,8 @@ aside {
     /* height: 100%; */
     display: grid;
     grid-template-rows: 35% 15% 35% 15%;
-    min-width: 50px;
-    max-width: 190px;
+    /* min-width: 10px; */
+    /* max-width: px; */
 }
 
 aside img#perfil {
@@ -149,9 +149,12 @@ aside nav a:hover {
 main {
     overflow-y: scroll;
     height: 100%;
-    min-width: 270px;
+    /* min-width: 100px; */
+    /* min-width: 270px; */
+    /* 270 + 50 = 320 */
     /* iPhone5 = 320 x 568 */
-    /* max-width: 1176px; */
+    max-width: 1176px;
+    /* min-width: 50; */
     /* 1366 - 190 = 1176 */
     /* 1366 x 625 (728 window) */
 }
@@ -512,6 +515,7 @@ main section.rodape {
     background-color: var(--cor3);
     padding: 10px 20px;    
 }
+
 
 /* .formulario {
     width: 350px;
