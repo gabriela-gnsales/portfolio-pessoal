@@ -58,6 +58,8 @@ aside {
     /* height: 100%; */
     display: grid;
     grid-template-rows: 35% 15% 35% 15%;
+    min-width: 50px;
+    max-width: 190px;
 }
 
 aside img#perfil {
@@ -66,7 +68,6 @@ aside img#perfil {
     border-radius: 50%;
     display: block;
     margin: auto;
-
 }
 
 /* aside img#perfil:hover {
@@ -91,8 +92,7 @@ aside h1 {
     /* padding-bottom: 40px; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 aside h1:hover {
@@ -136,7 +136,7 @@ aside nav a:hover {
 }
 
 .redes-sociais-indice img {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 2px;
 }
@@ -149,6 +149,11 @@ aside nav a:hover {
 main {
     overflow-y: scroll;
     height: 100%;
+    min-width: 270px;
+    /* iPhone5 = 320 x 568 */
+    /* max-width: 1176px; */
+    /* 1366 - 190 = 1176 */
+    /* 1366 x 625 (728 window) */
 }
 
 main section.inicio {
@@ -184,14 +189,10 @@ section.inicio h1 {
 #nome {
     text-align: left;
     font-size: 3.5em;
-
     font-family: var(--font-inicio);
     color: var(--cor1);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
-    /* padding-top: 40px; */
-    padding-left: 70px;    
-    /* padding: 25px 70px 0px 70px; */
-    /*  */
+    padding-left: 70px;
 }
 
 #nome:hover {
@@ -468,6 +469,7 @@ main section.contato h1 {
 
 .links-contato img {
     /* width: 10%;  */
+    width: 15%;
 }
 
 .links-contato a {
