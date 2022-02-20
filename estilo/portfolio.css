@@ -16,10 +16,12 @@
     --cor1: #c5ebd6;
     /* --cor1: #83e1ad; */
     /* --cor2: #3ddc84; */
-    --cor2: #2fa866;
-    /* --cor4: #1a5c37; */
-    --cor3: #063d1e;
-    --cor4: #CF1200;
+    /* --cor2: #2fa866; */
+    --cor2: #1c8a4dc7;
+    /* --cor1: #1a5c37; */
+    --cor3: #073f20f3;
+    --cor4: #bb1203;
+    /* --cor4: #940e01d7; */
     --cor5: #3D0B06;
 
     --font-inicio:'Averia Libre', cursive;
@@ -61,25 +63,27 @@ body {
 
 aside {
     background-color: black;
-    padding: 40px 10px;
-    height: 100vh;
+    /* padding: 40px 10px; */
+    padding: 20px 10px;
+    /* height: 100vh; */
     /* height: 100%; */
+    display: grid;
+    grid-template-rows: 35% 15% 35% 15%;
 }
 
 aside img#perfil {
+    grid-row: 1;
     width: 100%;
     border-radius: 50%;
+    display: block;
+    margin: auto;
+
 }
 
 /* aside img#perfil:hover {
     border: solid;
     border-color: var(--cor4);
 } */
-
-aside img {
-    display: block;
-    margin: auto;
-}
 
 /* aside img:hover {
     border-color: var(--cor2);
@@ -88,32 +92,44 @@ aside img {
 } */
 
 aside h1 {
+    grid-row: 2;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
     color: white;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    /* text-align: center; */
+    /* padding-top: 30px; */
+    /* padding-bottom: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 aside h1:hover {
-    color: var(--cor2);
+    color: var(--cor4);
     font-size: 1.7em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
 
-aside nav a {
-    display: block;
-    text-align: center;
+aside nav {
+    grid-row: 3;
+    align-self: center;
+}
+
+aside nav a {    
+    /* display: block;
+    text-align: center; */
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     font-weight: bold;
     color: var(--cor2);
-    padding: 10px;
     text-decoration: none;
     border-radius: 5px;
     transition-duration: .5s;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 aside nav a:hover {
@@ -122,10 +138,12 @@ aside nav a:hover {
 }
 
 .redes-sociais-indice {
+    grid-row: 4;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     align-items: flex-end;
-    padding-top: 80px;
+    /* padding-top: 80px; */   
 }
 
 .redes-sociais-indice img {
@@ -133,6 +151,11 @@ aside nav a:hover {
     margin: auto;
     padding: 2px;
 }
+
+/* aside img {
+    display: block;
+    margin: auto;
+} */
 
 main {
     overflow-y: scroll;
