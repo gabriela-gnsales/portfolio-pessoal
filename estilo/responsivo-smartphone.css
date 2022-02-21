@@ -1,35 +1,5 @@
 @charset "UTF-8";
 
-/* @media (max-width: 800px) {
-    body {
-        grid-template-columns: 20% 80%;
-        background-color: aqua;
-    }
-}
-
-@media (max-width: 400px) {
-    body {
-        grid-template-columns: 25% 75%;
-        background-color: aqua;
-    }
-    section.inicio h1 {
-        font-size: 1em;
-    }
-    aside {
-        background-color: aqua;
-    }
-} */
-
-/* @media screen and (min-width: 768px) {
-    body {
-        grid-template-columns: 20% 80%;
-    }
-    aside {
-        background-color: aqua;
-    }
-
-} */
-
 @media (max-width: 480px) {
     body {
         /* grid-template-columns: 10% 90%; */
@@ -42,12 +12,9 @@
         grid-template-columns: 25% 75%; 
     }
     aside {
-        /* background-color: pink; */
         display: grid;
         grid-template-rows: 20% 20% 40% 20%;
         padding: 15px 2px;
-        /* max-width: 50px; */
-        /* min-width: 50px; */
     }
     aside img#perfil {
         width: 70%;
@@ -70,13 +37,11 @@
         flex-direction: column; */
         width: 60%;
     }
-
     main {
         /* max-width: ; */
         overflow-x: hidden;   
         /* height: 100%;      */
     }
-
     #bem-vindo {
         font-size: 0.8em;
         padding: 40px 10px 0px 10px;
@@ -112,7 +77,6 @@
         font-size: 0.9em;
         padding: 20px 10px 0px 10px;
     }
-
     main section h1 {
         font-size: 1.3em;
         padding-top: 15px;
@@ -128,7 +92,6 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-
     main section.formacao {
         /* display: grid;
         grid-template-columns: 1fr;
