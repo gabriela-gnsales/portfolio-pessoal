@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     body {
         /* grid-template-columns: 10% 90%; */
         /* width: 100%; */
@@ -15,6 +15,7 @@
         display: grid;
         grid-template-rows: 20% 20% 40% 20%;
         padding: 15px 2px;
+        background-color: pink;
     }
     aside img#perfil {
         width: 70%;
@@ -67,7 +68,6 @@
         display: block;
         text-align: left;
         padding-left: 10px;
-
     }
     #formacao1 {
         font-size: 0.9em;
@@ -99,7 +99,7 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
     main section.formacao h1 {
         /* grid-column: 1;
@@ -180,7 +180,7 @@
         display: flex;
         flex-direction: column;
         /* height: 100%; */
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
     main section.contato h1 {
         /* font-size: 1.3em; */

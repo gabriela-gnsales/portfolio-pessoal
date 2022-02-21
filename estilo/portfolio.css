@@ -235,8 +235,8 @@ main section h1 {
     color: var(--cor3);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /* padding-top: 50px;
+    padding-bottom: 20px; */
 }
 
 main section h1:hover {
@@ -251,22 +251,21 @@ main section.sobre-mim {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* min-height: 600px; */
     height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 50px;
 }
 
 main section.sobre-mim  p {
     font-family: var(--fonte-padrao);
-    /* color: rgb(0, 0, 0); */
     color: var(--cor5);
     text-align: justify;
-    /* text-indent: 30px; */
     font-size: 1em;
     line-height: 1.8em;
-    /* margin: 0px; */
-    padding-bottom: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
+    /* padding-bottom: 10px; */
+    /* padding-left: 70px;
+    padding-right: 70px; */
 }
 
 main section.formacao {
@@ -281,6 +280,7 @@ main section.formacao {
 main section.formacao h1 {
     grid-column: 1 / 3;
     grid-row: 1;
+    padding-top: 30px;
 }
 
 .cursos {
@@ -441,7 +441,6 @@ main section.contato h1 {
 .links-contato td.imagem {
     /* width: 40px;
     height: 40px; */
-
     text-align: center;
 }
 
