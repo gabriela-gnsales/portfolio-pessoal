@@ -30,7 +30,7 @@
 
 } */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     body {
         /* grid-template-columns: 10% 90%; */
         /* width: 100%; */
@@ -186,8 +186,70 @@
         margin: auto; */
         /* width: 70%;    */
     }
-    
-
+    main section.experiencia {
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; */
+    }
+    main h4 {
+        font-size: 0.6em;
+        padding: 0px 10px 2px 10px;
+    }
+    .lado-esquerdo {
+        padding: 0px;
+    }
+    main section.experiencia h2 {
+        font-size: 0.9em;
+        padding: 10px 10px 5px 10px; 
+    }
+    .lado-direito {
+        padding: 0px;
+        align-items: flex-start;
+    }
+    .lado-direito img {
+        display: block;
+        margin: auto;
+        width: 90%;
+        border-radius: 50%;
+        padding: 20px 5px;
+    }
+    main section.contato {
+        display: flex;
+        flex-direction: column;
+        /* height: 100%; */
+        background-color: blueviolet;
+    }
+    main section.contato h1 {
+        /* font-size: 1.3em; */
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .links-contato table td.texto {
+        font-size: 0.7em;
+        width: 100px;
+        height: 20px;
+        padding-left: 10px;
+    }
+    .links-contato p {
+        font-size: 0.9em;
+        padding-top: 10px;
+    }
+    .links-contato img {
+        width: 10%;
+    }
+    iframe {
+        margin: auto;
+        padding: 5px;
+        width: 250px;
+    }
+    .foto-contato img {
+        width: 50%;
+    }
+    main section.rodape {
+        display: block;
+        font-size: 0.6em;
+        padding: 5px 10px;    
+    }
 }
 
 

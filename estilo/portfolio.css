@@ -151,11 +151,11 @@ aside nav a:hover {
 main {
     overflow-y: scroll;
     height: 100%;
+    max-width: 1200px;
     /* min-width: 100px; */
     /* min-width: 270px; */
     /* 270 + 50 = 320 */
     /* iPhone5 = 320 x 568 */
-    max-width: 1176px;
     /* min-width: 50; */
     /* 1366 - 190 = 1176 */
     /* 1366 x 625 (728 window) */
@@ -377,7 +377,7 @@ main h4 {
 .lado-esquerdo {
     grid-column: 1;
     grid-row: 2;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 
 main section.experiencia h2 {
@@ -391,15 +391,16 @@ main section.experiencia h2 {
 .lado-direito {
     grid-column: 2;
     grid-row: 2;
-    padding: 55px 0px;
+    padding: 20px 0px;
 }
 
-.lado-esquerdo img {
+/* .lado-esquerdo img { */
+.lado-direito img {
     display: block;
     margin: auto;
     width: 90%;
     border-radius: 50%;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 main section.contato {
