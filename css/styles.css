@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    background-image: linear-gradient(to top, rgb(39, 0, 0), black);  
+    color: rgb(228, 228, 228)
+}
+
+h1 {
+    color: aqua;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px 0 20px 0; 
+
+}
+
+a {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
